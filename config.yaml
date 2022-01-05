@@ -1,6 +1,6 @@
 settings:
   title: 'Status Page'
-  url: 'https://status-page.eidam.dev' # used for Slack messages
+  url: 'https://status.kovinda.workers.dev' # used for Slack messages
   logo: logo-192x192.png # image in ./public/ folder
   daysInHistogram: 90 # number of days you want to display in histogram
   collectResponseTimes: true # collects avg response times from CRON locations
@@ -15,25 +15,61 @@ settings:
   dayInHistogramNotOperational: ' incident(s)' # xx incident(s) recorded
 
 monitors:
-  - id: workers-cloudflare-com # unique identifier
-    name: workers.cloudflare.com
-    description: 'You write code. They handle the rest.' # default=empty
-    url: 'https://workers.cloudflare.com/' # URL to fetch
+  - id: www-kovinda-cf # unique identifier
+    name: www.kovinda.cf
+    url: 'https://www.kovinda.cf/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
-    linkable: false # allows the title to be a link, default=true
-
-  - id: www-cloudflare-com
-    name: www.cloudflare.com
-    description: 'Built for anything connected to the Internet.'
-    url: 'https://www.cloudflare.com'
-    method: GET
-    expectStatus: 200
     linkable: true # allows the title to be a link, default=true
 
-  - id: blog-cloudflare-com
-    name: The Cloudflare Blog
-    url: 'https://blog.cloudflare.com/'
+  - id: kovinda-cf
+    name: kovinda.cf
+    url: 'https://kovinda.cf'
     method: GET
     expectStatus: 200
+    linkable: true
+
+  - id: dl-kovinda-cf
+    name: dl.kovinda.cf
+    url: 'https://dl.kovinda.cf/'
+    description: 'The Google Drive Index'
+    method: GET
+    expectStatus: 200
+    
+  - id: dl-kovinda-cf-2
+    name: crazy.kovinda.workers.dev
+    url: 'https://crazy.kovinda.workers.dev/'
+    description: 'The Google Drive Index - Alt link'
+    method: GET
+    expectStatus: 200
+
+  - id: contact-me-kovinda-cf
+    name: contact-me.kovinda.cf
+    url: 'https://contact-me.kovinda.cf/'
+    description: 'Contact me page'
+    method: GET
+    expectStatus: 200
+
+  - id: contact-me-kovinda-cf-2
+    name: contact-me.kovinda.workers.dev
+    url: 'https://contact-me.kovinda.workers.dev/'
+    description: 'Contact me page - Alt link'
+    method: GET
+    expectStatus: 200
+
+  - id: img-backend
+    name: gen-img.kovinda.cf
+    url: 'https://gen-img.kovinda.cf/'
+    description: 'Background image backend'
+    method: GET
+    expectStatus: 200
+
+  - id: img-backend-2
+    name: bg-maker.kovinda.workers.dev
+    url: 'https://bg-maker.kovinda.workers.dev/'
+    description: 'Background image backend'
+    method: GET
+    expectStatus: 200
+    
+    
