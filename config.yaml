@@ -36,12 +36,15 @@ monitors:
     description: 'The Google Drive Index'
     method: GET
     expectStatus: 200
+    linkable: true
+    followRedirect: true
     
   - id: dl-kovinda-cf-2
     name: crazy.kovinda.workers.dev
     url: 'https://crazy.kovinda.workers.dev/'
     description: 'The Google Drive Index - Alt link'
     method: GET
+    followRedirect: true
     expectStatus: 200
 
   - id: contact-me-kovinda-cf
@@ -49,6 +52,7 @@ monitors:
     url: 'https://contact-me.kovinda.cf/'
     description: 'Contact me page'
     method: GET
+    followRedirect: true
     expectStatus: 200
 
   - id: contact-me-kovinda-cf-2
@@ -56,6 +60,7 @@ monitors:
     url: 'https://contact-me.kovinda.workers.dev/'
     description: 'Contact me page - Alt link'
     method: GET
+    followRedirect: true
     expectStatus: 200
 
   - id: img-backend
@@ -63,6 +68,7 @@ monitors:
     url: 'https://gen-img.kovinda.cf/'
     description: 'Background image backend'
     method: GET
+    followRedirect: true
     expectStatus: 200
 
   - id: img-backend-2
@@ -70,6 +76,7 @@ monitors:
     url: 'https://bg-maker.kovinda.workers.dev/'
     description: 'Background image backend'
     method: GET
+    followRedirect: true
     expectStatus: 200
     
     
