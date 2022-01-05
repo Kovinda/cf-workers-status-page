@@ -68,15 +68,13 @@ monitors:
     url: 'https://gen-img.kovinda.cf/'
     description: 'Background image backend'
     method: GET
-    followRedirect: true
-    expectStatus: 200
+    expectStatus: 301
 
   - id: img-backend-2
     name: bg-maker.kovinda.workers.dev
     url: 'https://bg-maker.kovinda.workers.dev/'
     description: 'Background image backend'
     method: GET
-    followRedirect: true
-    expectStatus: 200
+    expectStatus: 301
     
     
