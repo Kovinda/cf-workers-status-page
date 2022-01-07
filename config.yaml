@@ -17,7 +17,7 @@ settings:
 monitors:
   - id: www-kovinda-cf # unique identifier
     name: www.kovinda.cf
-    url: 'https://www.kovinda.cf/' # URL to fetch
+    url: 'https://www.kovinda.cf/'
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: true # should fetch follow redirects, default=false
