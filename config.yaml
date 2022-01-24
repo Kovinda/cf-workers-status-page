@@ -15,41 +15,41 @@ settings:
   dayInHistogramNotOperational: ' incident(s)' # xx incident(s) recorded
 
 monitors:
-  - id: www-kovinda-cf # unique identifier
-    name: www.kovinda.cf
-    url: 'https://www.kovinda.cf/'
+  - id: www-kovinda-tk # unique identifier
+    name: www.kovinda.tk
+    url: 'https://www.kovinda.tk/'
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: true # should fetch follow redirects, default=false
     linkable: true # allows the title to be a link, default=true
 
-  - id: kovinda-cf
-    name: kovinda.cf
-    url: 'https://kovinda.cf'
+  - id: kovinda-tk
+    name: kovinda.tk
+    url: 'https://kovinda.tk'
     method: GET
     expectStatus: 200
     linkable: true
 
-  - id: dl-kovinda-cf
-    name: dl.kovinda.cf
-    url: 'https://dl.kovinda.cf/'
+  - id: dl-kovinda-tk
+    name: dl.kovinda.tk
+    url: 'https://dl.kovinda.tk/'
     description: 'The Google Drive Index'
     method: GET
     expectStatus: 200
     linkable: true
     followRedirect: true
 
-  - id: contact-me-kovinda-cf
-    name: contact-me.kovinda.cf
-    url: 'https://contact-me.kovinda.cf/'
+  - id: contact-me-kovinda-tk
+    name: contact-me.kovinda.tk
+    url: 'https://contact-me.kovinda.tk/'
     description: 'Contact me page'
     method: GET
     followRedirect: true
     expectStatus: 200
 
   - id: img-backend
-    name: gen-img.kovinda.cf
-    url: 'https://gen-img.kovinda.cf/'
+    name: gen-img.kovinda.tk
+    url: 'https://gen-img.kovinda.tk/'
     description: 'Background image backend'
     method: GET
     expectStatus: 301
