@@ -54,4 +54,11 @@ monitors:
     method: GET
     expectStatus: 301
     
+  - id: ekel-status
+    name: ekel.kln.ac.lk
+    url: 'https://ekel.kln.ac.lk/'
+    description: 'Ekelaniya'
+    method: GET
+    expectStatus: 200
+    
     
